@@ -1,0 +1,237 @@
+
+(session joystick.ses
+  (base_design joystick.dsn)
+  (placement
+    (resolution um 10)
+    (component MountingHole:MountingHole_3.2mm_M3
+      (place REF4 1441450 -1041400 front 0)
+      (place REF3 1441450 -869950 front 0)
+    )
+    (component MountingHole:MountingHole_3.2mm_M3::1
+      (place REF1 1079500 -869950 front 0)
+      (place REF2 1079500 -1041400 front 0)
+    )
+    (component 3386K:3386K
+      (place OFFSET1 1143000 -946150 front 0)
+    )
+    (component "Connector_JST:JST_XH_S5B-XH-A_1x05_P2.50mm_Horizontal"
+      (place J1 1514900 -1008850 front 90)
+    )
+    (component "Seeeduino XIAO KICAD:Seeeduino XIAO-MOUDLE14P-2.54-21X17.8MM"
+      (place U1 1209256 -1070033 front 0)
+    )
+    (component "Connector_JST:JST_XH_S4B-XH-A_1x04_P2.50mm_Horizontal"
+      (place J2 1016000 -920750 front 270)
+    )
+  )
+  (was_is
+  )
+  (routes 
+    (resolution um 10)
+    (parser
+      (host_cad "KiCad's Pcbnew")
+      (host_version "(6.0.7)")
+    )
+    (library_out 
+      (padstack "Via[0-1]_800:400_um"
+        (shape
+          (circle F.Cu 8000 0 0)
+        )
+        (shape
+          (circle B.Cu 8000 0 0)
+        )
+        (attach off)
+      )
+      (padstack "Via[0-1]_800:400_um"
+        (shape
+          (circle F.Cu 8000 0 0)
+        )
+        (shape
+          (circle B.Cu 8000 0 0)
+        )
+        (attach off)
+      )
+    )
+    (network_out 
+      (net GND
+        (wire
+          (path F.Cu 2500
+            1514900 -1008850
+            1492862 -1008850
+            1398267 -914255
+            1379233 -914255
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            1016000 -920750
+            1120852 -920750
+            1166127 -875475
+            1259544 -875475
+            1275027 -890958
+            1355936 -890958
+            1379233 -914255
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            1016000 -920750
+            1002833 -933917
+            1002833 -950621
+            1010462 -958250
+            1129700 -958250
+            1143000 -971550
+          )
+        )
+      )
+      (net +5V
+        (wire
+          (path F.Cu 2500
+            1514900 -983850
+            1474228 -983850
+            1379233 -888855
+          )
+        )
+      )
+      (net /ITXR
+        (wire
+          (path B.Cu 2500
+            1514900 -958850
+            1501899 -958850
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            1379233 -1041255
+            1396226 -1041255
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            1395342 -1030751
+            1395342 -1006236
+            1442728 -958850
+            1501899 -958850
+          )
+        )
+        (via "Via[0-1]_800:400_um" 1395342 -1030751
+        )
+        (wire
+          (path F.Cu 2500
+            1396226 -1041255
+            1396226 -1031635
+            1395342 -1030751
+          )
+        )
+      )
+      (net /IRXT
+        (wire
+          (path F.Cu 2500
+            1234580 -1041255
+            1234580 -1028356
+            1244485 -1018451
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            1514900 -933850
+            1460978 -933850
+            1376377 -1018451
+            1244485 -1018451
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            1217587 -1041255
+            1234580 -1041255
+          )
+        )
+        (via "Via[0-1]_800:400_um" 1244485 -1018451
+        )
+      )
+      (net /EN
+        (wire
+          (path B.Cu 2500
+            1514900 -908850
+            1514900 -920601
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            1217587 -965055
+            1343222 -965055
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            1514900 -920601
+            1387676 -920601
+            1343222 -965055
+          )
+        )
+        (via "Via[0-1]_800:400_um" 1343222 -965055
+        )
+      )
+      (net +3.3V
+        (wire
+          (path F.Cu 2500
+            1168400 -946150
+            1168400 -1014840
+            1208348 -1054788
+            1264100 -1054788
+            1379233 -939655
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            1016000 -933999
+            1156249 -933999
+            1168400 -946150
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            1016000 -945750
+            1016000 -933999
+          )
+        )
+      )
+      (net /X
+        (wire
+          (path F.Cu 2500
+            1016000 -970750
+            1091948 -970750
+            1173843 -888855
+            1217587 -888855
+          )
+        )
+      )
+      (net /Y
+        (wire
+          (path F.Cu 2500
+            1016000 -995750
+            1077473 -995750
+            1158968 -914255
+            1217587 -914255
+          )
+        )
+      )
+      (net "Net-(OFFSET1-Pad2)"
+        (wire
+          (path F.Cu 2500
+            1217587 -939655
+            1200594 -939655
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            1200594 -939655
+            1196196 -935257
+            1153893 -935257
+            1143000 -946150
+          )
+        )
+      )
+    )
+  )
+)

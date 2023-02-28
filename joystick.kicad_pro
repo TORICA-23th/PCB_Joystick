@@ -365,8 +365,8 @@
     "last_paths": {
       "gencad": "",
       "idf": "",
-      "netlist": "",
-      "specctra_dsn": "",
+      "netlist": "./",
+      "specctra_dsn": "joystick.dsn",
       "step": "",
       "vrml": ""
     },
